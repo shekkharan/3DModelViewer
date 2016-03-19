@@ -18,11 +18,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <connections>
                             <outlet property="delegate" destination="yaC-qo-JjT" id="dFQ-HU-TSv"/>
+                            <outletCollection property="gestureRecognizers" destination="ibJ-Ym-03K" appends="YES" id="7h9-8X-gyq"/>
                         </connections>
                     </glkView>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </glkViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p8h-Yv-4cI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="ibJ-Ym-03K">
+                    <connections>
+                        <action selector="pan:" destination="yaC-qo-JjT" id="eEi-lD-9kx"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="261" y="583"/>
         </scene>

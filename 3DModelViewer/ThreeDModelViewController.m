@@ -62,4 +62,7 @@
   glDrawArrays(GL_TRIANGLES, 0, ChairNumVerts);
 }
 
+- (IBAction)pan:(UIPanGestureRecognizer *)sender {
+}
+
 @end
