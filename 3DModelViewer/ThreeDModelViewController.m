@@ -57,6 +57,8 @@
   [self setupMatrices];
   glEnableVertexAttribArray(GLKVertexAttribPosition);
   glVertexAttribPointer(GLKVertexAttribPosition, 3, GL_FLOAT, GL_FALSE, 0, ChairVerts);
+  glEnableVertexAttribArray(GLKVertexAttribNormal);
+  glVertexAttribPointer(GLKVertexAttribNormal, 3, GL_FLOAT, GL_FALSE, 0, ChairNormals);
   glDrawArrays(GL_TRIANGLES, 0, ChairNumVerts);
 }
 
