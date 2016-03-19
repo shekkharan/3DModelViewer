@@ -28,6 +28,7 @@
 		D33137AC1C9D603B006129C9 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		D33137AE1C9D6068006129C9 /* ThreeDModelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeDModelViewController.h; sourceTree = "<group>"; };
 		D33137AF1C9D6068006129C9 /* ThreeDModelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeDModelViewController.m; sourceTree = "<group>"; };
+		D33137B21C9D68AB006129C9 /* Chair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chair.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +63,7 @@
 		D33137941C9D5EB5006129C9 /* 3DModelViewer */ = {
 			isa = PBXGroup;
 			children = (
+				D33137B11C9D68AB006129C9 /* Resources */,
 				D33137981C9D5EB5006129C9 /* AppDelegate.h */,
 				D33137991C9D5EB5006129C9 /* AppDelegate.m */,
 				D33137AE1C9D6068006129C9 /* ThreeDModelViewController.h */,
@@ -81,6 +83,14 @@
 				D33137961C9D5EB5006129C9 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D33137B11C9D68AB006129C9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D33137B21C9D68AB006129C9 /* Chair.h */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
