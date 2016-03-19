@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  3DModelViewController.h
 //  3DModelViewer
 //
 //  Created by Shekhar on 19/3/16.
@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <GLKit/GLKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ThreeDModelViewController : GLKViewController
 
 @end
-
