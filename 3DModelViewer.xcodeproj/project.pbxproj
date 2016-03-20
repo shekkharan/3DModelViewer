@@ -9,10 +9,13 @@
 /* Begin PBXBuildFile section */
 		D33137971C9D5EB5006129C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D33137961C9D5EB5006129C9 /* main.m */; };
 		D331379A1C9D5EB5006129C9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D33137991C9D5EB5006129C9 /* AppDelegate.m */; };
-		D331379D1C9D5EB5006129C9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D331379C1C9D5EB5006129C9 /* ViewController.m */; };
 		D33137A01C9D5EB5006129C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D331379E1C9D5EB5006129C9 /* Main.storyboard */; };
 		D33137A21C9D5EB5006129C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D33137A11C9D5EB5006129C9 /* Assets.xcassets */; };
 		D33137A51C9D5EB5006129C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D33137A31C9D5EB5006129C9 /* LaunchScreen.storyboard */; };
+		D33137AD1C9D603B006129C9 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D33137AC1C9D603B006129C9 /* OpenGLES.framework */; };
+		D33137B01C9D6068006129C9 /* ThreeDModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D33137AF1C9D6068006129C9 /* ThreeDModelViewController.m */; };
+		D33137B51C9E33CD006129C9 /* TransformationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D33137B41C9E33CD006129C9 /* TransformationManager.m */; };
+		D33137B91C9E385C006129C9 /* ThreeDModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D33137B81C9E385C006129C9 /* ThreeDModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +23,18 @@
 		D33137961C9D5EB5006129C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D33137981C9D5EB5006129C9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D33137991C9D5EB5006129C9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D331379B1C9D5EB5006129C9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D331379C1C9D5EB5006129C9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D331379F1C9D5EB5006129C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D33137A11C9D5EB5006129C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D33137A41C9D5EB5006129C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D33137A61C9D5EB5006129C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D33137AC1C9D603B006129C9 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		D33137AE1C9D6068006129C9 /* ThreeDModelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeDModelViewController.h; sourceTree = "<group>"; };
+		D33137AF1C9D6068006129C9 /* ThreeDModelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeDModelViewController.m; sourceTree = "<group>"; };
+		D33137B21C9D68AB006129C9 /* Chair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chair.h; sourceTree = "<group>"; };
+		D33137B31C9E33CD006129C9 /* TransformationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransformationManager.h; sourceTree = "<group>"; };
+		D33137B41C9E33CD006129C9 /* TransformationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransformationManager.m; sourceTree = "<group>"; };
+		D33137B71C9E385C006129C9 /* ThreeDModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeDModel.h; sourceTree = "<group>"; };
+		D33137B81C9E385C006129C9 /* ThreeDModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeDModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D33137AD1C9D603B006129C9 /* OpenGLES.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +52,7 @@
 		D33137891C9D5EB5006129C9 = {
 			isa = PBXGroup;
 			children = (
+				D33137AC1C9D603B006129C9 /* OpenGLES.framework */,
 				D33137941C9D5EB5006129C9 /* 3DModelViewer */,
 				D33137931C9D5EB5006129C9 /* Products */,
 			);
@@ -58,15 +69,19 @@
 		D33137941C9D5EB5006129C9 /* 3DModelViewer */ = {
 			isa = PBXGroup;
 			children = (
+				D33137B61C9E381E006129C9 /* Models */,
+				D33137B11C9D68AB006129C9 /* Resources */,
 				D33137981C9D5EB5006129C9 /* AppDelegate.h */,
 				D33137991C9D5EB5006129C9 /* AppDelegate.m */,
-				D331379B1C9D5EB5006129C9 /* ViewController.h */,
-				D331379C1C9D5EB5006129C9 /* ViewController.m */,
+				D33137AE1C9D6068006129C9 /* ThreeDModelViewController.h */,
+				D33137AF1C9D6068006129C9 /* ThreeDModelViewController.m */,
 				D331379E1C9D5EB5006129C9 /* Main.storyboard */,
 				D33137A11C9D5EB5006129C9 /* Assets.xcassets */,
 				D33137A31C9D5EB5006129C9 /* LaunchScreen.storyboard */,
 				D33137A61C9D5EB5006129C9 /* Info.plist */,
 				D33137951C9D5EB5006129C9 /* Supporting Files */,
+				D33137B31C9E33CD006129C9 /* TransformationManager.h */,
+				D33137B41C9E33CD006129C9 /* TransformationManager.m */,
 			);
 			path = 3DModelViewer;
 			sourceTree = "<group>";
@@ -79,6 +94,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D33137B11C9D68AB006129C9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D33137B21C9D68AB006129C9 /* Chair.h */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D33137B61C9E381E006129C9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D33137B71C9E385C006129C9 /* ThreeDModel.h */,
+				D33137B81C9E385C006129C9 /* ThreeDModel.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -87,8 +119,8 @@
 			buildConfigurationList = D33137A91C9D5EB5006129C9 /* Build configuration list for PBXNativeTarget "3DModelViewer" */;
 			buildPhases = (
 				D331378E1C9D5EB5006129C9 /* Sources */,
-				D331378F1C9D5EB5006129C9 /* Frameworks */,
 				D33137901C9D5EB5006129C9 /* Resources */,
+				D331378F1C9D5EB5006129C9 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,7 +181,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D331379D1C9D5EB5006129C9 /* ViewController.m in Sources */,
+				D33137B51C9E33CD006129C9 /* TransformationManager.m in Sources */,
+				D33137B01C9D6068006129C9 /* ThreeDModelViewController.m in Sources */,
+				D33137B91C9E385C006129C9 /* ThreeDModel.m in Sources */,
 				D331379A1C9D5EB5006129C9 /* AppDelegate.m in Sources */,
 				D33137971C9D5EB5006129C9 /* main.m in Sources */,
 			);
@@ -262,8 +296,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = 3DModelViewer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.myaango.-DModelViewer";
+				PRODUCT_BUNDLE_IDENTIFIER = com.myaango.threeDModelViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -273,8 +308,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = 3DModelViewer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.myaango.-DModelViewer";
+				PRODUCT_BUNDLE_IDENTIFIER = com.myaango.threeDModelViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -298,6 +334,7 @@
 				D33137AB1C9D5EB5006129C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
