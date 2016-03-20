@@ -7,10 +7,14 @@
 //
 
 #import "ThreeDModelViewController.h"
-#import "Chair.h"
+#import "ThreeDModel.h"
 @interface ThreeDModelViewController ()
+{
+  GLKVector3  rotationStartVector;
+}
 
 @property (strong, nonatomic) GLKBaseEffect *baseEffect;
+@property (strong, nonatomic) ThreeDModel *threeDModel;
 
 @end
 
@@ -28,6 +32,7 @@
   glClearColor(0.7f, 0.8f, 1.0f, 1.0f);
   glEnable(GL_CULL_FACE);
   [self setupBaseEffect];
+  self.threeDModel = [[ThreeDModel alloc] initWithModel:kThreeDModelChair];
 }
 
 - (void)setupBaseEffect
@@ -55,11 +60,7 @@
   glClear(GL_COLOR_BUFFER_BIT);
   [self.baseEffect prepareToDraw];
   [self setupMatrices];
-  glEnableVertexAttribArray(GLKVertexAttribPosition);
-  glVertexAttribPointer(GLKVertexAttribPosition, 3, GL_FLOAT, GL_FALSE, 0, ChairVerts);
-  glEnableVertexAttribArray(GLKVertexAttribNormal);
-  glVertexAttribPointer(GLKVertexAttribNormal, 3, GL_FLOAT, GL_FALSE, 0, ChairNormals);
-  glDrawArrays(GL_TRIANGLES, 0, ChairNumVerts);
+  [self.threeDModel renderModel];
 }
 
 - (IBAction)pan:(UIPanGestureRecognizer *)sender {
