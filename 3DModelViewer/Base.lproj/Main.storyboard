@@ -19,6 +19,8 @@
                         <connections>
                             <outlet property="delegate" destination="yaC-qo-JjT" id="dFQ-HU-TSv"/>
                             <outletCollection property="gestureRecognizers" destination="ibJ-Ym-03K" appends="YES" id="7h9-8X-gyq"/>
+                            <outletCollection property="gestureRecognizers" destination="gJF-V5-okD" appends="YES" id="DEG-kJ-FHq"/>
+                            <outletCollection property="gestureRecognizers" destination="Gy3-xs-lQ7" appends="YES" id="Cdy-Lf-OCN"/>
                         </connections>
                     </glkView>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -29,6 +31,16 @@
                         <action selector="pan:" destination="yaC-qo-JjT" id="eEi-lD-9kx"/>
                     </connections>
                 </panGestureRecognizer>
+                <pinchGestureRecognizer id="gJF-V5-okD">
+                    <connections>
+                        <action selector="pinch:" destination="yaC-qo-JjT" id="OmZ-bL-1Wc"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <rotationGestureRecognizer id="Gy3-xs-lQ7">
+                    <connections>
+                        <action selector="rotation:" destination="yaC-qo-JjT" id="o1P-v3-agH"/>
+                    </connections>
+                </rotationGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="261" y="583"/>
         </scene>
