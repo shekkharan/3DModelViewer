@@ -63,6 +63,8 @@
 }
 
 - (IBAction)pan:(UIPanGestureRecognizer *)sender {
+  CGPoint rotation = [sender translationInView:sender.view];
+  NSLog(@"Rotation %f,%f", rotation.x, rotation.y);
 }
 
 @end
