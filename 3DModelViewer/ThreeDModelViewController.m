@@ -31,7 +31,7 @@
   
   GLKView *glkView = (GLKView *)self.view;
   glkView.context = context;
-  glClearColor(0.7f, 0.8f, 1.0f, 1.0f);
+  glClearColor(0.5f, 0.5f, 0.5f, 1.0f);
   glEnable(GL_CULL_FACE);
   [self setupBaseEffect];
   self.threeDModel = [[ThreeDModel alloc] initWithModel:kThreeDModelChair];
