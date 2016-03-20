@@ -298,7 +298,7 @@
 				INFOPLIST_FILE = 3DModelViewer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.myaango.-DModelViewer";
+				PRODUCT_BUNDLE_IDENTIFIER = com.myaango.threeDModelViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -310,7 +310,7 @@
 				INFOPLIST_FILE = 3DModelViewer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.myaango.-DModelViewer";
+				PRODUCT_BUNDLE_IDENTIFIER = com.myaango.threeDModelViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
